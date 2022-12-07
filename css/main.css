@@ -1,0 +1,275 @@
+*{
+  box-sizing: border-box;
+}
+body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  
+  
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  #wrapper{
+
+  width:85%;
+  margin:auto;
+
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.text_green{
+  color:#22BC22;
+}
+.text_center{
+  text-align: center;
+}
+
+header{
+  position:relative;
+  padding:20px;
+  background:#22BC22;
+  
+  text-align: center;
+}
+header .logo{
+  position:absolute;
+  top:0;
+  
+}
+header h1{
+  margin:20px;
+  font-weight: 100;
+}
+header .logo img{
+  margin-top: 20px;
+  width:140px;
+  height:auto;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+menu ul{
+  margin-top:;
+  list-style-type: none;
+  overflow:hidden;
+  background-color:#22BC22;
+  
+}
+menu ul li{
+  display:inline-block;
+  padding:10px;
+  border-radius:5px;
+  /* background-color: #fff; */
+  margin-left:10px;
+  float:right;
+}
+menu ul li a{
+  text-decoration:none;
+  color:#fff;
+  text-transform: uppercase;
+}
+menu ul li:hover{
+  background-color:#22BC22;
+  border:1px solid #fff;
+
+}
+menu ul li:hover a{
+  color:#fff;
+}
+#home > img{
+  width:100%;
+  height:500px;
+
+}
+#home h2, #home p{
+  text-align: center;
+  padding:10px;
+}
+#home h2, #courses h2{
+  color:#22BC22;
+}
+p{
+  line-height: 1.5;
+}
+main > div{
+  margin-top:30px;
+  padding-bottom:20px;
+  
+}
+#home h1, #about h1, #courses h1, #contact h1, #register h1, #login h1{
+  color:#22BC22;
+  text-align: center;
+  margin:20px;
+}
+
+
+#about img{
+  width:100%;
+  border-radius:30px;
+}
+
+#about p{
+  padding-left: 30px;
+  margin-bottom:20px;
+  font-size: 18px;
+  text-align: justify;
+}
+@supports (initial-letter: 4) or (-webkit-initial-letter: 4) {
+  #about p::first-letter {
+     -webkit-initial-letter: 4;
+     -moz-initial-letter:4;
+     -ms-initial-letter:4;
+     initial-letter: 4;
+     color: #22BC22;
+     font-weight: bold;
+     margin-right: 0.5em;
+  }
+}
+header h1{
+  color:#fff;
+}
+
+#courses p{
+  padding-right: 20px;
+}
+#courses [class*="col-"]{
+  padding:20px;
+}
+#courses [class*="col-"] div{
+  box-shadow: 1px 3px 5px gray;
+  padding:20px;
+}
+#contact p, #contact h2{
+  text-align:center;
+}
+#contact h2{
+  margin-bottom:30px;
+}
+#contact input, #contact textarea{
+  width:100%;
+  padding:10px;
+  border:1px solid #22BC22;
+  border-radius:3px;
+  margin-bottom: 10px;
+}
+#contact input[type="submit"]{
+  width:100px;
+  background:#000;
+  color:#fff;
+  cursor: pointer;
+}
+#contact input[type="submit"]:hover{
+  background:#22BC22;
+}
+
+  div.thumbnails {
+padding:0 5px;
+}
+
+
+
+#register{
+  padding:30px;
+}
+#register input, #register button, #login input, #login button{
+  width:100%;
+  border:1px solid #22BC22;
+  padding:15px;
+  margin-bottom:10px;
+  border-radius: 6px;
+}
+#register button, #login button{
+  margin-top:10px;
+  cursor:pointer;
+  background:#22BC22;
+  color:#fff;
+}
+
+
+.form-div {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+}
+
+#register #addProduct {
+
+  max-width: 100px ;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+
+}
+
+/*css code for footer starts here*/
+
+footer{
+  background-color: #22BC22;
+  
+  text-align: center;
+  padding:20px;
+}
+footer h2, p{
+  color:#fff;
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+  menu ul li{
+    display:block;
+    width:100%;
+  }
+  header .logo img{
+    width:100px;
+    height:50px;
+  }
+  header h1{
+    font-size: 20px;
+  }
+  [class*="col-"]{
+    width:100%;
+  }
+}
+
+
+
